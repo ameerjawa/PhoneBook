@@ -1,0 +1,257 @@
+/*******************************
+ * 
+ * main style
+ * 
+ * ********************************************/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Redressed', cursive;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.detailtitle{
+  text-align: center;
+}
+.parheader {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maincontacts {
+  flex-grow: 1;
+  border: 0.2px solid black;
+  border-radius: 10px;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 1px 2px #7e7e7e;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/************************************
+ * 
+ * main contacts style
+
+ *********************************************/
+.actions{
+  padding: 1rem 0;
+}
+.contacts {
+  flex-grow: 0.5;
+}
+.actions ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: minmax(70%, auto) repeat(3, 10%);
+}
+
+#addnewperson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 30%;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 99;
+  min-height: 50vh;
+  margin-left: 140px;
+}
+#addnewperson input {
+  display: block;
+  margin-bottom: 15px;
+  width: 80%;
+  margin: auto;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px;
+}
+#addnewperson h1 {
+  display: flex;
+
+  justify-content: center;
+}
+.btn {
+  max-width: 70px;
+  text-align: center;
+}
+.btnsave{
+   max-width: 70px;
+}
+
+.btnadd{
+ max-width: 70px;
+
+}
+.description {
+  padding-top: 100px;
+}
+.disablemode {
+  visibility: hidden;
+}
+.enablemode {
+  visibility: visible;
+}
+button {
+  border: none;
+  background-color: white;
+}
+.contacts ul {
+  border-top: 1px solid rgba(0, 0,0, .3);
+  width: 100%;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.contacts ul li {
+  border-bottom: 1px solid rgba(0, 0,0, .3);
+  display: grid;
+  min-width: 100%;
+  grid-template-columns: repeat(2, 1fr) repeat(2, minmax(50px, auto));
+}
+.contacts ul li:hover{
+  background-color: rgba(0, 0,0, .3);
+  opacity: 0.7;
+
+}
+.contacts ul li a button {
+  background: none;
+}
+.contacts ul li a{
+  padding: 1rem;
+}
+#showdetailsid {
+  position: absolute;
+  width: 20rem;
+  padding: 20px;
+  background-color: rgb(235, 235, 175);
+  border-radius: 20px;
+  z-index: 99;
+  margin-top: 110px;
+  margin-left: 140px;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#showdetailsid h1{
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0,0, .5);
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+.nocontacts{
+  display: grid;
+  color: red;
+  border: none;
+  place-items: center;
+  padding: 2rem;
+}
+
+
+
+
+
+
+/***********
+
+
+change style mode 
+********************/
+body{
+  background-image: url(../images/darkmode.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+}
+
+.parheader{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto ;
+
+}
+.changestylebtn{
+  position: absolute;
+  color: wheat;
+}
+.title{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.title span{
+  font-size: 2.5rem;
+}
+.maincontacts{
+  background-color: rgba(179, 174, 174, 0.363);  
+}
+button{
+  background: none;
+}
+.searchbar{
+  background-color: rgba(0, 0, 0, 0.808);
+  color: aliceblue;
+  padding: 0.2rem;
+  border-radius: 8px;
+}
+#showdetailsid{
+  background-color: rgba(0, 0, 0, 0.842);
+  
+
+}
+#addnewperson{
+  background-color: rgba(0, 0, 0, 0.842);
+
+}
+#addnewperson input{
+  background-color: rgba(197, 197, 197, 0.336);
+}
+
+
+
+
+
+
+
+
+
+
+
+
